@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(90deg, #0c2d53, #061439);
+  background: linear-gradient(90deg, #337ed5, #061439);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -93,7 +93,7 @@
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: #061439;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -108,8 +108,8 @@
   }
 
   .nav-links:hover {
-    background-color: #fff;
-    color: #242424;
+    background-color:#0656c6;
+    color:#061439;
     border-radius: 0;
   }
 
@@ -151,7 +151,7 @@
   }
 
   .nav-links-mobile:hover {
-    background: #fff;
+    background: #f6ffc3;
     color: #242424;
     transition: 250ms;
   }

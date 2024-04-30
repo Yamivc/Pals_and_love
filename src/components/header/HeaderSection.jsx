@@ -5,9 +5,9 @@ import './HeaderSection.css';
 function HeaderSection() {
   return (
     <div className='header-container'>
-      <video src='..\videos\Video1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      <video src='..\videos\Video2.mp4' autoPlay loop muted />
+      <h1>Take one moment, one breath</h1>
+      <p>How are you feeling?</p>
       <div className='header-btns'>
         <Button
           className='btns'
@@ -22,7 +22,7 @@ function HeaderSection() {
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          FEEL THE UNIVERSE <i className='far fa-play-circle' />
         </Button>
       </div>
     </div>
