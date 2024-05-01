@@ -1,0 +1,132 @@
+.panel {
+    padding: 6rem;
+    background: #fff;
+}
+
+.panel-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(10, 5, 74);
+    margin-bottom: 2rem;
+    margin-left: 0; 
+}
+
+.panel-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 2rem; 
+}
+
+.panel-image {
+    flex: 1;
+    max-width: 250px;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: left; 
+}
+
+.panel-image img {
+    max-width: 100%; 
+    max-height: 250px; 
+}
+
+.panel-text {
+    flex: 2;
+}
+
+.panel-text p {
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+    font-size: 18px; 
+    line-height: 1.6;
+    margin-left: 1em; 
+}
+
+.panel-content-r {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 2rem; 
+}
+
+.panel-image-r {
+    flex: 1;
+    max-width: 250px; 
+    margin-left: 2rem; 
+}
+
+.panel-image-r img {
+    max-width: 100%; 
+    max-height: 250px; 
+}
+
+.panel-text-r {
+    flex: 2;
+}
+
+.panel-text-r p {
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+    font-size: 18px; 
+    line-height: 1.6;
+    margin-right: 1em; 
+}
+
+@media only screen and (max-width: 960px) {
+    .panel {
+        padding: 4rem;
+    }
+
+    .panel-text p {
+        font-size: 20px; 
+    }
+
+    .panel-image {
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+
+    .panel-text-r p {
+        font-size: 20px; 
+    }
+
+    .panel-image-r {
+        margin-left: 0;
+        margin-bottom: 2em; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .panel {
+        padding: 3rem;
+    }
+
+    .panel-title {
+        margin-left: 0;
+        font-size: 40px; 
+    }
+
+    .panel-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel-image {
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+
+    .panel-content-r {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel-image-r {
+        margin-left: 0;
+        margin-bottom: 2em; 
+    }
+}

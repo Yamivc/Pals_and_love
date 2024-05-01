@@ -6,21 +6,24 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 
 function Navbar() {
-  const [click, setClick] = useState(false);
+  const [clickOnNavbar, setClickOnNavbar] = useState(false);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const handleClick = () => setClickOnNavbar(!clickOnNavbar);
+  const closeMobileMenu = () => setClickOnNavbar(false);
 
   useEffect(() => {
     const showButton = () => {
-      setClick(window.innerWidth <= 960 ? false : true);
+      setClickOnNavbar(window.innerWidth <= 960 ? false : true);
     };
-
+    /* la función showButton se define dentro del hook useEffect. Esta función comprueba el ancho de la ventana (window.innerWidth) y 
+    establece el estado clickOnNavbar en true o false dependiendo de si el ancho de la ventana es menor o igual a 960 píxeles. +info en navbar.txt*/
     window.addEventListener('resize', showButton);
 
     return () => {
       window.removeEventListener('resize', showButton);
     };
+
+
   }, []);
 
   return (
@@ -32,7 +35,7 @@ function Navbar() {
         <div className='menu-icon' onClick={handleClick}>
           <FontAwesomeIcon icon={faBars} />
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <ul className={clickOnNavbar ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
               Home

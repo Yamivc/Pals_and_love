@@ -1,0 +1,35 @@
+
+Objetivo del componente: creación de un botón personalizado con un estilo y tamaño dinámico.
+
+Explicación:
+
+-------------------------------------------------------------------------------------------
+Se importan PropTypes de la biblioteca prop-types y el componente Link de react-router-dom.
+-------------------------------------------------------------------------------------------
+Se define un arreglo STYLES que contiene diferentes estilos de botón.
+Se define otro arreglo SIZES que contiene diferentes tamaños de botón.
+Se define la función Button, que acepta ciertos props: 
+
+children (los elementos hijos del componente), 
+type (el tipo de botón, por ejemplo, "button" o "submit"), 
+onClick (la función que se ejecutará cuando se haga clic en el botón), 
+buttonStyle (el estilo del botón) y buttonSize (el tamaño del botón).
+
+--------------------------------------------------------------------------------------------
+Dentro de la función Button, se verifica si el estilo del botón proporcionado (buttonStyle) 
+está contenido en el arreglo STYLES. Si es así, se usa ese estilo; 
+de lo contrario, se utiliza el primer estilo del arreglo STYLES.
+--------------------------------------------------------------------------------------------
+Se realiza una verificación similar para el tamaño del botón (buttonSize).
+
+El componente Button retorna un componente Link de react-router-dom que redirige a la ruta 
+'/sign-up'.
+Este componente Link envuelve un elemento <button> que tiene la clase btn junto con las 
+clases de estilo y tamaño del botón que se determinaron previamente.
+
+--------------------------------------------------------------------------------------------
+
+Este botón también tiene un manejador de eventos onClick y un tipo (type) definidos por los props 
+recibidos.
+Además, se definen los PropTypes para los props esperados por el componente Button para garantizar 
+la integridad y correcto uso del componente.

@@ -1,0 +1,35 @@
+useEffect(() => {
+    const showButton = () => {
+      setClickOnNavbar(window.innerWidth <= 960 ? false : true);
+    };
+    
+       window.addEventListener('resize', showButton);  
+
+    return () => {
+      window.removeEventListener('resize', showButton);
+    };   
+
+    
+  }, []);
+
+  Explicación:
+
+----------------------------------------------------------------------------------------------------------------------------------
+La función `showButton` determina si se debe mostrar un botón de navegación dependiendo del ancho de la ventana del navegador. 
+Si el ancho de la ventana es menor o igual a 960 píxeles, el botón de navegación no se mostrará (`clickOnNavbar` será `false`);
+de lo contrario, se mostrará (`clickOnNavbar` será `true`).
+----------------------------------------------------------------------------------------------------------------------------------
+El hook `useEffect` se utiliza para ejecutar código adicional en componentes funcionales de React en respuesta a diferentes 
+eventos. En este caso, se ejecuta la función `showButton` cuando ocurre un cambio en el tamaño de la ventana del navegador.
+----------------------------------------------------------------------------------------------------------------------------------
+La línea `window.addEventListener('resize', showButton)` agrega un event listener al objeto `window` para el evento de 
+redimensionamiento (`resize`). Cuando ocurre un evento de redimensionamiento (cuando el usuario cambia el tamaño de la ventana
+del navegador), se llama a la función `showButton`. 
+ 
+Esto asegura que el estado `clickOnNavbar` se actualice según el tamaño actual de la ventana.
+----------------------------------------------------------------------------------------------------------------------------------
+La parte `return () => { window.removeEventListener('resize', showButton); }` del hook `useEffect` devuelve una función de 
+limpieza. Cuando el componente se desmonta o actualiza, esta función se ejecuta, eliminando el event listener que se agregó 
+anteriormente. Esto evita posibles problemas de memoria y fugas de eventos.
+----------------------------------------------------------------------------------------------------------------------------------
+En resumen, este código controla dinámicamente la visibilidad de la ventana de navegación en función del tamaño de la ventana
