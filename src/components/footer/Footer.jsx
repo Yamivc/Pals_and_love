@@ -15,7 +15,7 @@ function Footer() {
         <p className='footer-subscription-text'>
           Subscribe when you need, unsubscribe at any time.
         </p>
-        <div className='input-areas'>
+        <div className='footer-input-areas'>
           <form>
             <input
               className='footer-input'
@@ -61,18 +61,18 @@ function Footer() {
           </div>
         </div>
       </div>
-      <section className='social-media'>
-        <div className='social-media-wrap'>
+      <section className='footer-social-media'>
+        <div className='footer-social-media-wrap'>
           <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
+            <Link to='/' className='footer-social-logo'>
               UN1VERSE
               
             </Link>
           </div>
-          <small className='website-rights'>UN1VERSE © 2024</small>
-          <div className='social-icons'>
+          <small className='footer-website-rights'>UN1VERSE © 2024</small>
+          <div className='footer-social-icons'>
             <Link
-              className='social-icon-link facebook'
+              className='footer-social-icon-link facebook'
               to='/'
               target='_blank'
               aria-label='Facebook'
@@ -80,7 +80,7 @@ function Footer() {
               <FontAwesomeIcon icon={faFacebookF} />
             </Link>
             <Link
-              className='social-icon-link instagram'
+              className='footer-social-icon-link instagram'
               to='/'
               target='_blank'
               aria-label='Instagram'
@@ -88,7 +88,7 @@ function Footer() {
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
             <Link
-              className='social-icon-link youtube'
+              className='footer-social-icon-link youtube'
               to='/'
               target='_blank'
               aria-label='Youtube'
@@ -96,7 +96,7 @@ function Footer() {
               <FontAwesomeIcon icon={faYoutube} />
             </Link>
             <Link
-              className='social-icon-link twitter'
+              className='footer-social-icon-link twitter'
               to='/'
               target='_blank'
               aria-label='Twitter'
@@ -104,7 +104,7 @@ function Footer() {
               <FontAwesomeIcon icon={faXTwitter} />
             </Link>
             <Link
-              className='social-icon-link linkedin'
+              className='footer-social-icon-link linkedin'
               to='/'
               target='_blank'
               aria-label='LinkedIn'
