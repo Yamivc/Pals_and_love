@@ -1,5 +1,6 @@
-
 import { Button } from '../button/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlayCircle } from '@fortawesome/free-regular-svg-icons/faPlayCircle';
 import './HeaderSection.css';
 
 function HeaderSection() {
@@ -20,9 +21,9 @@ function HeaderSection() {
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
+          
         >
-          FEEL THE UNIVERSE <i className='far fa-play-circle' />
+          FEEL THE UNIVERSE <FontAwesomeIcon icon={faPlayCircle} />
         </Button>
       </div>
     </div>

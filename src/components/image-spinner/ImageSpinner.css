@@ -1,0 +1,19 @@
+.image-with-spinner-image-shown {
+    display: block
+}
+
+.image-with-spinner-image-hidden {
+    display: none;
+}
+
+.image-with-spinner-spinner-shown {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-with-spinner-spinner-hidden {
+    display: none;
+}

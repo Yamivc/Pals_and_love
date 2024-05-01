@@ -1,4 +1,5 @@
 import './MainInfoPanel.css';
+import ImageSpinner from '../image-spinner/ImageSpinner';
 
 function MainInfoPanel() {
     return (
@@ -6,7 +7,7 @@ function MainInfoPanel() {
             <h1 className='panel-title'>Why You Should Care About Mental Health</h1>
             <div className='panel-content'>
                 <div className='panel-image'>
-                    <img src='src\images\image1.png' alt='Mental Health' />
+                    <ImageSpinner imageUrl='src\images\image1.png' alt='Mental Health' />
                 </div>
                 <div className='panel-text'>
                     <p>
@@ -29,7 +30,7 @@ function MainInfoPanel() {
 
             <div className='panel-content-r'>
                 <div className='panel-image-r'>
-                    <img src='src\images\image2.png' alt='Mental Health' />
+                    <ImageSpinner imageUrl='src\images\image2.png' alt='Mental Health' />
                 </div>
                 <div className='panel-text-r'>
                     <p>
