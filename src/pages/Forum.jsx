@@ -1,6 +1,16 @@
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 
+function Forum() {
+  return (
+    <>
+      <Navbar />
 
-export default function Forum() {
-  return <h1 className='forum'>foro donde la gente habla</h1>;
+      <Footer />
+    </>
+  );
 }
+
+export default Forum;
+

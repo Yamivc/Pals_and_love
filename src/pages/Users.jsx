@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 
-function SignUp() {
+function Users() {
   return (
     <>
       <Navbar />
@@ -11,5 +11,5 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Users;
 

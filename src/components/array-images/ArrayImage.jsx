@@ -1,6 +1,6 @@
 import imageArray from "../../models/image-array-image-and-text/imageArrayImageAndText";
 import "./ArrayImage.css";
-import ImageSpinner from "../image-spinner/ImageSpinner";
+import CubeImage from "../cube-loader-image/CubeImage";
 import { Link } from 'react-router-dom';
 
 
@@ -15,7 +15,7 @@ function ImageArrayImageAndText() {
             imageArray.map((image, index) => (
               <div className="image-array-image-and-text-unit" key={index}>
                 <div className="image-array-image-and-text-unit-image-wrapper">
-                  <ImageSpinner imageUrl={`src/images/${image.src}.jpg`} alt="array image" />
+                  <CubeImage imageUrl={`src/images/${image.src}.jpg`} alt="array image" />
                 </div>
                 <div className="image-array-image-and-text-unit-text">
                   <h2>{image.title}</h2>

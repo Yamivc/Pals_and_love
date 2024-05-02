@@ -1,0 +1,19 @@
+.image-with-cube-image-shown {
+    display: block
+}
+
+.image-with-cube-image-hidden {
+    display: none;
+}
+
+.image-with-cube-cube-shown {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-with-cube-cube-hidden {
+    display: none;
+}
