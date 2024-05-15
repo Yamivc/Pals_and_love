@@ -13,13 +13,13 @@ function Cards() {
               src='src\images\image5.jpg'
               text='Explore the hidden consecuences about depression'
               label='Gray Emotions'
-              //path='/'
+              path='/learn-more/anxiety'
             />
             <CardItem
               src='src\images\image6.jpg'
               text='Feeling that you are out? It has a name and is BURNOUT'
               label='Work burnout'
-              //path='/'
+              path='/learn-more/burnout'
             />
           </ul>
           <ul className='cards__items'>
