@@ -1,0 +1,22 @@
+.interview {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+   
+    background-color: #f9f9f9;
+}
+
+.person-name {
+    margin-top: 1em;
+    color: #333;
+}
+
+.occupation {
+    margin-top: 10px;
+    color: #666;
+}
+
+.quote {
+    margin-top: 10px;
+    color: #444;
+}
