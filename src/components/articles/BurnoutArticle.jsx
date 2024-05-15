@@ -21,6 +21,7 @@ const BurnoutArticle = () => {
         <p>This state is a significant issue affecting many individuals in today&apos;s fast-paced world. It&apos;s a state of emotional, physical, and mental exhaustion caused by excessive and prolonged stress. Burnout can lead to feelings of cynicism, detachment from work, and a sense of ineffectiveness or lack of accomplishment.</p>
 
         <img src="/src/images/blogger-2838945_1280.jpg" alt="Article Photo" className="article-image" />
+        
         <p>Common symptoms of burnout include:</p>
 
         <ul className='article-list'>

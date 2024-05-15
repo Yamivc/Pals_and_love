@@ -1,12 +1,13 @@
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import MentalHealth from "../../components/articles/MentalHealth";
+import MentalHealthArticle from "../../components/articles/MentalHealthArticle";
+
 
 function MentalHealth() {
   return (
     <>
       <Navbar />
-      <BurnoutArticle />
+      <MentalHealthArticle />
       <Footer />
     </>
   );

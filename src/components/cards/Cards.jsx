@@ -39,7 +39,7 @@ function Cards() {
               src='src\images\image9.png'
               text='Look inside of you. Information about mental deseases and selfcare'
               label='self care'
-              //path=''
+              path='/learn-more/mental-health'
             />
 
           </ul>
