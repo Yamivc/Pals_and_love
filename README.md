@@ -15,7 +15,7 @@ Un1verse is a platform dedicated to promoting mental health awareness and provid
 6. [License](#license)
 
 <!-- Installation Instructions -->
-##Installation
+## Installation
 To run the Mental Health Forum Website locally, follow these steps:
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
@@ -36,12 +36,12 @@ npm install
 npm run dev
 
 <!-- Usage Information -->
-##Usage
+## Usage
 Once the installation is complete, access the website through your browser and explore the features.
 
 <!-- Features -->
 
-##Features
+## Features
 
 Forum sections for different mental health topics
 Ability to create, edit, and delete comments in the forum (not working)
@@ -50,7 +50,7 @@ Responsive design for optimal viewing on all devices
 
 <!-- Technologies Used -->
 
-##Technologies-Used
+## Technologies-Used
 The Mental Health Forum Website is built using the following technologies:
 
 React - JavaScript library for building user interfaces.
@@ -58,13 +58,13 @@ Vite - Next-generation frontend tooling for React development.
 Firebase - Platform for building web and mobile applications.
 
 <!-- Contributing Guidelines -->
-##Contributing
+## Contributing
 
 Contributions to the Mental Health Forum Website are welcome! If you find any bugs, have feature requests, or would like to contribute code, please follow the guidelines outlined in the CONTRIBUTING.md file.
 
 <!-- License Information -->
 
-##License
+## License
 
 This project is licensed under the MIT License. You are free to modify and distribute the code as per the terms of the license.
 
