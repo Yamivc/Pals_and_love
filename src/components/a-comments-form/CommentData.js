@@ -1,8 +1,8 @@
 
 const CommentData = [
-    { id: 1, name: "User 1", text: "First comment" },
-    { id: 2, name: "User 2", text: "Second comment" },
-    
+    { id: 1, name: "Fran", text: "Hi! Welcome to our comunity!" },
+    { id: 2, name: "Adrian", text: "hello!" },
+    // Agrega más comentarios si es necesario
   ];
   
   export default CommentData;
