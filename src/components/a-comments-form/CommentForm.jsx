@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 const CommentForm = ({ addComment, currentComment, updateComment }) => {
@@ -6,7 +6,7 @@ const CommentForm = ({ addComment, currentComment, updateComment }) => {
   const [text, setText] = useState('');
 
   useEffect(() => {
-    if (currentComment.id) {
+    if (currentComment && currentComment.id) {
       setName(currentComment.name);
       setText(currentComment.text);
     } else {
@@ -17,7 +17,7 @@ const CommentForm = ({ addComment, currentComment, updateComment }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (currentComment.id) {
+    if (currentComment && currentComment.id) {
       updateComment(currentComment.id, name, text);
     } else {
       addComment(name, text);
@@ -45,7 +45,7 @@ const CommentForm = ({ addComment, currentComment, updateComment }) => {
         className="comment-input"
       />
       <button type="submit" className="comment-button">
-        {currentComment.id ? 'Actualizar' : 'Comment'}
+        {currentComment && currentComment.id ? 'Update' : 'Comment'}
       </button>
     </form>
   );
@@ -57,7 +57,7 @@ CommentForm.propTypes = {
     id: PropTypes.number,
     name: PropTypes.string,
     text: PropTypes.string
-  }).isRequired,
+  }),
   updateComment: PropTypes.func.isRequired,
 };
 
