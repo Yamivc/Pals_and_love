@@ -24,7 +24,7 @@ To run the Mental Health Forum Website locally, follow these steps:
 
 
 # Clone the repository
-git clone https://github.com/your-username/mental-health-forum.git
+gh repo clone Yamivc/Un1verse
 
 # Navigate to the project directory
 cd mental-health-forum
