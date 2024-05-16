@@ -40,7 +40,7 @@ function Footer() {
             <h2>Contact Us</h2>
             <Link to='/'>Contact</Link>
             <Link to='/'>Support</Link>
-            
+            <a href='/rss/rss.xml'>Rss</a>
             
           </div>
         </div>
