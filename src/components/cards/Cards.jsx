@@ -27,13 +27,13 @@ function Cards() {
               src='src\images\image7.jpg'
               text='"Sweet drems are made of this. WHO am I to disagree"'
               label='Technologies'
-              //path='/'
+              path='/learn-more/tech-addiction'
             />
             <CardItem
               src='src\images\image8.jpg'
               text='Come and live a day by day in my life'
               label='first person'
-              //path='/'
+              path='/learn-more/my-day'
             />
             <CardItem
               src='src\images\image9.png'

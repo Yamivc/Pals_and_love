@@ -2,10 +2,16 @@ import './Articles.css';
 import Articles from "../articles/Articles";
 import Interview from "../articles/Interview";
 import AuthorInfo from './AuthorInfo';
+import ArticleHeader from './ArticleHeader';
 
 const MentalHealthArticle = () => {
     const article = {
-        title: 'Exploring the Importance of Mental Health',
+        title:
+            <ArticleHeader
+                title="How To Become A Mental Health Ally  "
+
+                date="Oct 10, 2023, 03:23pm EDT"
+            />,
 
         author:
             <AuthorInfo
@@ -16,7 +22,7 @@ const MentalHealthArticle = () => {
         ,
         content: (
             <>
-                <p>Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community. It is an integral component of health and well-being that underpins our individual and collective abilities to make decisions, build relationships and shape the world we live in. Mental health is a basic human right. And it is crucial to personal, community and socio-economic development.</p>
+                <p className='articleParagraph'>Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community. It is an integral component of health and well-being that underpins our individual and collective abilities to make decisions, build relationships and shape the world we live in. Mental health is a basic human right. And it is crucial to personal, community and socio-economic development.</p>
                 <img src="/src/images/Mental-health-golden-future-1000x675.jpg" alt="Article Photo" className="article-image" />
 
                 <p className='articleParagraph'>Common factors that influence mental health include:</p>
@@ -64,8 +70,8 @@ const MentalHealthArticle = () => {
 
                 <p className='articleParagraph'>Reshaping the determinants of mental health often requires action beyond the health sector and so promotion and prevention programmes should involve the education, labour, justice, transport, environment, housing, and welfare sectors. The health sector can contribute significantly by embedding promotion and prevention efforts within health services; and by advocating, initiating and, where appropriate, facilitating multisectoral collaboration and coordination.
 
-                </p>      
-                
+                </p>
+
                 <p className='articleParagraph'>Suicide prevention is a global priority and included in the Sustainable Development Goals. Much progress can be achieved by limiting access to means, responsible media reporting, social and emotional learning for adolescents and early intervention. Banning highly hazardous pesticides is a particularly inexpensive and cost–effective intervention for reducing suicide rates.
 
                     Promoting child and adolescent mental health is another priority and can be achieved by policies and laws that promote and protect mental health, supporting caregivers to provide nurturing care, implementing school-based programmes and improving the quality of community and online environments. School-based social and emotional learning programmes are among the most effective promotion strategies for countries at all income levels.
