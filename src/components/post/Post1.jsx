@@ -1,4 +1,3 @@
-
 import Post from './Post';
 import './Post.css';
 
@@ -10,7 +9,7 @@ const Post1 = () => {
         subredittitle="Help"
         hour="10"
         title="Come and say nice things. I'm feeling down today :C"
-        description="Everyone deserves good vives!."
+        description="Everyone deserves good vibes!"
         imageUrl="https://via.placeholder.com/80"
       />
 

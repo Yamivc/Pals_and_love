@@ -2,24 +2,15 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments, faShareAlt } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
-import PostCommentSection from '../post-comment-secction/PostCommentSection';
-import CommentCard from '../post-comment-secction/CommentCard'; // Importa CommentCard si aún no lo has hecho
+import CommentApp from '../a-comments-form/CommentApp'; // Importa el componente CommentApp
 import './Post.css';
 
 const Post = ({ author, subredittitle, hour, title, description, imageUrl }) => {
     const [showComments, setShowComments] = useState(false); // Estado para controlar la visualización de los comentarios
-    const [comments, setComments] = useState([]); // Estado para almacenar comentarios
 
     // Función para manejar el click en el icono de comentarios
     const handleCommentsClick = () => {
         setShowComments(!showComments);
-    };
-
-    // Función para manejar el envío de comentarios
-    const handlePostCommentSubmit = (commentText) => {
-        // Agregar nuevo comentario al estado
-        const newComment = { author: 'User', comment: commentText };
-        setComments([...comments, newComment]);
     };
 
     return (
@@ -51,12 +42,7 @@ const Post = ({ author, subredittitle, hour, title, description, imageUrl }) => 
                 {/* Renderiza la sección de comentarios si showComments es true */}
                 {showComments && (
                     <div className="comments-section">
-                        {/* Pasa la función handlePostCommentSubmit como prop */}
-                        <PostCommentSection postCommentSubmit={handlePostCommentSubmit} />
-                        {/* Muestra los comentarios utilizando CommentCard */}
-                        {comments.map((comment, index) => (
-                            <CommentCard key={index} author={comment.author} comment={comment.comment} />
-                        ))}
+                        <CommentApp />
                     </div>
                 )}
             </div>
