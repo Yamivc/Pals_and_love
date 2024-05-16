@@ -5,13 +5,18 @@ import LearnMore from "./pages/LearnMore";
 import SignUp from "./pages/SignUp";
 import Users from "./pages/Users";
 import "./App.css";
+import Anxiety from "./pages/articles/Anxiety";
+import Burnout from "./pages/articles/Burnout";
+import MentalHealthArticle from "./pages/articles/MentalHealth";
+import Depression from "./pages/articles/Depression";
+import TechAddiction from "./pages/articles/TechAddiction";
 
 function App() {
 
   return (
     <>
 
-    
+
       <BrowserRouter>
 
 
@@ -21,13 +26,18 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/forum' element={<Forum />} />
           <Route path='/learn-more' element={<LearnMore />} />
+          <Route path='/learn-more/anxiety' element={<Anxiety />} />
+          <Route path='/learn-more/burnout' element={<Burnout />} />
+          <Route path='/learn-more/mental-health' element={<MentalHealthArticle />} />
+          <Route path='/learn-more/tech-addiction' element={<TechAddiction />} />
+          <Route path='/learn-more/my-day' element={<Depression />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/users' element={<Users />} />
         </Routes>
 
 
       </BrowserRouter>
-   
+
     </>
   )
 }
