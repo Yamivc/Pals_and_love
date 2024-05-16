@@ -24,19 +24,24 @@ To run the Mental Health Forum Website locally, follow these steps:
 
 
 # Clone the repository
-gh repo clone Yamivc/Un1verse
+
+[gh repo clone Yamivc/Un1verse](https://github.com/Yamivc/Un1verse.git)
 
 # Navigate to the project directory
+
 cd mental-health-forum
 
 #Install dependencies
+
 npm install
 
 # Start the development server
+
 npm run dev
 
 <!-- Usage Information -->
 ## Usage
+
 Once the installation is complete, access the website through your browser and explore the features.
 
 <!-- Features -->
@@ -51,13 +56,16 @@ Responsive design for optimal viewing on all devices
 <!-- Technologies Used -->
 
 ## Technologies-Used
+
 The Mental Health Forum Website is built using the following technologies:
 
 React - JavaScript library for building user interfaces.
 Vite - Next-generation frontend tooling for React development.
+Node Js- 
 Firebase - Platform for building web and mobile applications.
 
 <!-- Contributing Guidelines -->
+
 ## Contributing
 
 Contributions to the Mental Health Forum Website are welcome! If you find any bugs, have feature requests, or would like to contribute code, please follow the guidelines outlined in the CONTRIBUTING.md file.
