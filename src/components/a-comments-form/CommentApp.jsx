@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import CommentForm from './CommentForm';
 import CommentList from './CommentList';
 import CommentData from './CommentData'; // Importa el objeto JSON de comentarios
@@ -6,15 +6,17 @@ import CommentData from './CommentData'; // Importa el objeto JSON de comentario
 import './CommentApp.css';
 
 const CommentApp = () => {
-  const [comments, setComments] = useState(CommentData);
-  const [currentComment, setCurrentComment] = useState({ id: null, name: '', text: '' });
+  const [comments, setComments] = useState(() => {
+    const storedComments = localStorage.getItem('comments');
+    return storedComments ? JSON.parse(storedComments) : CommentData;
+  });
 
   const addComment = (name, text) => {
     // Agrega un nuevo comentario al estado de comentarios
     const newComment = { id: Date.now(), name, text };
-    setComments([...comments, newComment]);
+    setComments(prevComments => [...prevComments, newComment]);
   };
-
+  
   const updateComment = (id, name, newText) => {
     // Actualiza el comentario correspondiente en el estado de comentarios
     const updatedComments = comments.map(comment =>
@@ -29,10 +31,15 @@ const CommentApp = () => {
     setComments(updatedComments);
   };
 
+  useEffect(() => {
+    // Almacena los comentarios en el localStorage cada vez que cambian
+    localStorage.setItem('comments', JSON.stringify(comments));
+  }, [comments]);
+
   return (
     <div className="app">
-      <CommentForm addComment={addComment} currentComment={currentComment} updateComment={updateComment} />
-      <CommentList comments={comments} setCurrentComment={setCurrentComment} deleteComment={deleteComment} />
+      <CommentForm addComment={addComment} />
+      <CommentList comments={comments} updateComment={updateComment} deleteComment={deleteComment} />
     </div>
   );
 };
